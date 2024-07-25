@@ -1,0 +1,55 @@
+@import "styles/variables";
+
+.footer {
+  background-color: $base-color;
+
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 96px 90px;
+    color: $white;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid rgba($white, .3);
+
+    &--name {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    &--info {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__bottom {
+
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    a {
+      display: inline-flex;
+      transition-duration: .2s;
+      transition-timing-function: ease-in-out;
+      transition-property: transform;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+

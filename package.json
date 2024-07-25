@@ -1,0 +1,45 @@
+{
+  "name": "mag-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "PORT=8080 next dev",
+    "build": "next build",
+    "start": "PORT=8080 NODE_ENV=production next start",
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.{js,jsx}\"",
+    "precommit": "npm run lint && npm run format",
+    "prepush": "npm run build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "dependencies": {
+    "axios": "0.21.1",
+    "cookie": "0.5.0",
+    "crypto-js": "^4.1.1",
+    "dayjs": "^1.11.10",
+    "dotenv": "^16.0.3",
+    "next": "14.1.4",
+    "next-logger": "^3.0.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-responsive-modal": "^6.4.2",
+    "react-scroll": "^1.8.9",
+    "styled-components": "^6.1.8",
+    "styled-normalize": "^8.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.12",
+    "@types/react": "18.3.3",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "postcss": "^8",
+    "prettier": "^3.2.5",
+    "sass": "^1.77.6",
+    "typescript": "5.5.4"
+  }
+}

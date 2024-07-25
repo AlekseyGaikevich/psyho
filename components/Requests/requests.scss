@@ -1,0 +1,62 @@
+@import "styles/variables";
+
+.requests {
+  padding: 154px 0 230px;
+  background-color: #F9F5F2;
+
+  &__container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 90px;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 112px;
+  }
+
+  &__principles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__block {
+    display: flex;
+    flex: 1 0 25%;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 40px;
+
+    &:nth-child(n+5) {
+      flex: 1 0 33.33%;
+    }
+
+    &--title {
+      height: 108px;
+      width: 108px;
+      border-radius: 100px;
+      background-color: #E2EFEF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &--container {
+        font-weight: 300;
+        font-size: 52px;
+        line-height: 60px;
+      }
+    }
+
+    &--desc {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+    }
+  }
+}

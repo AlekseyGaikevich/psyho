@@ -1,0 +1,72 @@
+@import "styles/variables";
+
+.pricing {
+  padding: 154px 0 230px;
+  background-color: #fff;
+
+  &__container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 90px;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 112px;
+  }
+
+  &__block--container {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+
+    .pricing__block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 40px 32px;
+      background-color: #E2EFEF;
+
+      &--title {
+        text-align: center;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0 50px 32px;
+      }
+
+      &--icon {
+        display: flex;
+      }
+
+      &--description,
+      &--duration {
+        display: flex;
+        gap: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: rgba($black, .8);
+        margin-bottom: 12px;
+      }
+
+      &--duration {
+        margin-bottom: 24px;
+      }
+
+      &--price {
+        margin-bottom: 48px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+      }
+
+      .Button.aboutBtn {
+        margin: 0 auto;
+      }
+    }
+  }
+}
