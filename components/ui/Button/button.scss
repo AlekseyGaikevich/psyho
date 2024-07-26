@@ -1,7 +1,7 @@
 @import "../../../styles/variables";
 
 .Button {
-  background-color: $button-bg;
+  background-color: $button-bg !important;
   display: flex;
   justify-content: center;
   align-items: center;
