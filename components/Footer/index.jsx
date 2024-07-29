@@ -3,7 +3,6 @@ import Image from 'next/image';
 import logo from '../../public/logo.png';
 import { IconInstComponent, IconPhoneComponent, IconTgComponent, IconViberComponent } from '../../public/icons';
 import { links } from '../../constants';
-import Link from 'next/link';
 
 export default function Footer() {
   const baseClass = 'footer';
@@ -12,6 +11,15 @@ export default function Footer() {
   return (
     <footer className={baseClass}>
       <div className={`${baseClass}__container`}>
+      <div
+          className={`${baseClass}__logo`}
+        >
+          <Image
+            src={logo}
+            alt={'logo'}
+            priority
+          />
+        </div>
         <div className={`${baseClass}__top`}>
           <div className={`${baseClass}__top--name`}>
             ИП ЧЕРНОБАЕВА СВЕТЛАНА СЕРГЕЕВНА

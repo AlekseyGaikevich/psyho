@@ -12,6 +12,10 @@
 
   &__modal--container {
     padding: 16px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      padding: 32px 0 0;
+    }
   }
 
   &__modal--title {
@@ -20,12 +24,23 @@
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 24px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 16px;
+    }
   }
 
   &__modal--text {
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      font-size: 13px;
+      line-height: 21px;
+    }
   }
 
   &__container {
@@ -35,6 +50,10 @@
     flex-direction: column;
     gap: 64px;
     padding: 0 90px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      padding: 0 20px;
+    }
   }
 
   &__title {
@@ -42,6 +61,12 @@
     font-weight: 500;
     font-size: 42px;
     line-height: 50px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 40px;
+    }
   }
 
   &__block {
@@ -49,10 +74,19 @@
     flex-direction: column;
     gap: 32px;
 
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      gap: 24px;
+    }
+
     &--title {
       font-weight: 600;
       font-size: 28px;
       line-height: 36px;
+
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        font-size: 20px;
+        line-height: 28px;
+      }
     }
 
     &--info {
@@ -62,6 +96,11 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 26px;
+
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        font-size: 16px;
+        line-height: 24px;
+      }
 
       p {
         strong {
@@ -75,5 +114,11 @@
     display: flex;
     margin: auto;
     gap: 142px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      flex-direction: column;
+      width: 100%;
+      gap: 24px;
+    }
   }
 }

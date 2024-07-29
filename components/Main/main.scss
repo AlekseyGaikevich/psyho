@@ -4,6 +4,10 @@
   background: $base-color-light;
   margin-top: 85px;
 
+  @media only screen and (min-width: 0) and (max-width: 767px) {
+    height: calc(100vh - 85px);
+  }
+
   &__container {
     display: flex;
     align-items: center;
@@ -21,6 +25,11 @@
         font-weight: 500;
         line-height: 42px;
         margin-bottom: 32px;
+
+        @media only screen and (min-width: 0) and (max-width: 767px) {
+          font-size: 24px;
+          line-height: 32px;
+        }
       }
 
       &__mid {
@@ -30,6 +39,17 @@
         font-weight: 400;
         line-height: 28px;
         margin-bottom: 40px;
+
+        @media only screen and (min-width: 0) and (max-width: 767px) {
+          font-size: 18px;
+          line-height: 26px;
+        }
+      }
+
+      a {
+        @media only screen and (min-width: 0) and (max-width: 767px) {
+          width: 100%;
+        }
       }
     }
 
@@ -41,6 +61,14 @@
         width: 100%;
         height: auto;
       }
+
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      padding: 200px 20px;
     }
   }
 }

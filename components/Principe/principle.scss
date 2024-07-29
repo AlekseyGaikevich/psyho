@@ -8,6 +8,10 @@
     max-width: 1440px;
     margin: auto;
     padding: 0 90px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      padding: 0 20px;
+    }
   }
 
   &__title {
@@ -16,11 +20,22 @@
     font-size: 42px;
     line-height: 50px;
     margin-bottom: 112px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 40px;
+    }
   }
 
   &__principles {
     display: flex;
     gap: 8px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      flex-direction: column;
+      gap: 16px;
+    }
   }
 
   &__block {
@@ -35,11 +50,23 @@
     padding: 56px 40px;
     gap: 24px;
 
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      height: 192px;
+      width: 100%;
+      gap: 16px;
+    }
+
     &--title {
       font-weight: 500;
       font-size: 32px;
       line-height: 40px;
       text-align: center;
+
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+      }
     }
 
     &--desc {
@@ -47,6 +74,11 @@
       font-size: 24px;
       line-height: 32px;
       text-align: center;
+
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        font-size: 20px;
+        line-height: 38px;
+      }
     }
   }
 }

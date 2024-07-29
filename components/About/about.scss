@@ -8,6 +8,10 @@
     max-width: 1440px;
     margin: auto;
     padding: 0 90px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      padding: 0 20px;
+    }
   }
 
   &__title {
@@ -16,6 +20,12 @@
     font-size: 42px;
     line-height: 50px;
     margin-bottom: 112px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 40px;
+    }
   }
 
   &__blockBtn {
@@ -23,15 +33,39 @@
     align-items: center;
     justify-content: center;
     gap: 32px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      overflow-x: auto;
+      justify-content: flex-start;
+      
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+    }
   }
 
   &__block_img {
     display: inline-flex;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      height: 292px;
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
   }
 
   &__block_about {
     display: flex;
     gap: 80px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      gap: 40px;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__block_desc {
@@ -46,6 +80,11 @@
       font-size: 24px;
       font-weight: 400;
       line-height: 32px;
+
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        font-size: 18px;
+        line-height: 26px;
+      }
     }
   }
 
@@ -54,11 +93,20 @@
     flex-direction: column;
     gap: 32px;
 
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      margin-top: 32px;
+    }
+
     &--title {
       font-size: 28px;
       font-weight: 500;
       line-height: 36px;
       text-align: center;
+
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        font-size: 20px;
+        line-height: 28px;
+      }
     }
 
     &--list {
@@ -69,6 +117,12 @@
       font-size: 24px;
       font-weight: 400;
       line-height: 32px;
+
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 56px;
+      }
     }
   }
 }
