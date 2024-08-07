@@ -5,7 +5,7 @@ export default function Requests() {
   const baseClass = 'requests';
   const principles = [
     {title: '01', description: 'Самооценка, любовь к себе'},
-    {title: '02', description: 'Отношения (С родителями, детьми, партнёром)'},
+    {title: '02', description: 'Отношения (Детско-родительские, с партнёром)'},
     {title: '03', description: 'Кризисные состояния (развод, потеря близкого, насилие)'},
     {title: '04', description: 'Панические атаки, тревожные состояния , страхи'},
     {title: '05', description: 'Эмоциональное выгорание, депрессивные состояния'},

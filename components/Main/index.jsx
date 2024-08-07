@@ -20,7 +20,7 @@ export default function Main() {
             Бережно, с уважением и эмпатией
           </div>
           <a href={tg} target={'_blank'}>
-            <Button position={'main'}>
+            <Button position={'call'}>
               Связаться со мной
             </Button>
           </a>

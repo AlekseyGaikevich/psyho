@@ -1,7 +1,7 @@
 @import "../../../styles/variables";
 
 .Button {
-  background-color: $button-bg !important;
+  background-color: $button-bg;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +15,7 @@
     background-color: rgba($button-bg, .8);
   }
 
-  &.main {
+  &.call {
     padding: 18px 32px;
     height: 64px;
     font-weight: 400;
