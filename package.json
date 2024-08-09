@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "PORT=8080 next dev",
+    "dev": "PORT=3000 next dev",
     "build": "next build",
-    "start": "PORT=8080 NODE_ENV=production next start",
+    "start": "PORT=3000 NODE_ENV=production next start",
     "lint": "next lint",
     "format": "prettier --write \"**/*.{js,jsx}\"",
     "precommit": "npm run lint && npm run format",
