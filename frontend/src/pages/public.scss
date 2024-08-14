@@ -1,0 +1,29 @@
+@import "./../styles/variables.scss";
+
+.public__contract {
+  margin-top: 85px;
+
+  &--container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 64px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      padding: 40px 20px;
+    }
+  }
+
+  &--title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 32px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 24px;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+@import "./../../styles/variables.scss";
+
+#stagesWork {
+  scroll-margin-top: 84px;
+}
+
+
+.stagesWork {
+  padding: 60px 0;
+  background-color: #F9F5F2;
+
+  &__container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 90px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      padding: 0 20px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 112px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &--container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 352px;
+    }
+
+    &--label {
+      margin-bottom: 40px;
+      width: 134px;
+      height: 134px;
+      border-radius: 100px;
+      background-color: #2F2D45;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        font-size: 32px;
+        line-height: 40px;
+        width: 69px;
+        height: 69px;
+      }
+    }
+
+    &--title {
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 34px;
+      margin-bottom: 16px;
+      text-align: center;
+
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+
+    &--desc {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+      color: rgba($black, .8);
+      text-align: center;
+
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}

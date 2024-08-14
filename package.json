@@ -1,38 +1,38 @@
 {
-  "name": "mag-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "my-app",
+  "version": "1.0.0",
+  "main": "backend/server.js",
   "scripts": {
-    "dev": "PORT=3000 next dev",
-    "build": "next build",
-    "start": "PORT=3000 NODE_ENV=production next start",
-    "lint": "next lint",
-    "format": "prettier --write \"**/*.{js,jsx}\"",
-    "precommit": "npm run lint && npm run format",
-    "prepush": "npm run build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "start": "node backend/server.js",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "nodemon backend/server.js",
+    "dev:frontend": "webpack serve --config webpack.config.js --mode development",
+    "build": "webpack --config webpack.config.js --mode production"
   },
   "dependencies": {
-    "next": "14.1.4",
-    "next-logger": "^3.0.1",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-responsive-modal": "^6.4.2",
-    "react-scroll": "^1.8.9",
-    "styled-components": "^6.1.8",
-    "styled-normalize": "^8.1.1"
+    "express": "^4.18.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-responsive-modal": "^6.0.0",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.4",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-simple-import-sort": "^10.0.0",
-    "postcss": "^8",
-    "prettier": "^3.2.5",
-    "sass": "^1.77.6",
-    "typescript": "5.5.4"
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "@babel/preset-react": "^7.18.0",
+    "babel-loader": "^8.2.5",
+    "concurrently": "^7.2.0",
+    "css-loader": "^6.11.0",
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.0",
+    "nodemon": "^2.0.16",
+    "sass": "^1.49.0",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
   }
 }

@@ -1,0 +1,98 @@
+@import "./../../styles/variables.scss";
+
+#requests {
+  scroll-margin-top: 84px;
+}
+
+.requests {
+  padding: 60px 0;
+  background-color: #F9F5F2;
+
+  &__container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 90px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      padding: 0 20px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 112px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__principles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      flex-wrap: initial;
+      flex-direction: column;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex: 1 0 25%;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 40px;
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+      padding: 0 0 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba($black, .3);
+      align-items: start;
+    }
+
+    &:nth-child(n+5) {
+      flex: 1 0 33.33%;
+    }
+
+    &--title {
+      height: 108px;
+      width: 108px;
+      border-radius: 100px;
+      background-color: #E2EFEF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &--container {
+        font-weight: 300;
+        font-size: 52px;
+        line-height: 60px;
+      }
+
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    &--desc {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+
+      @media only screen and (min-width: 0) and (max-width: 767px) {
+        font-size: 18px;
+        line-height: 26px;
+        text-align: start;
+      }
+    }
+  }
+}
